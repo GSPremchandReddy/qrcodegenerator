@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator by Premchand</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>QR code Generator by Premchand Reddy</h1>
+        <input type="text" name="" id="input" autocomplete="off"/>
+        <button type="submit" onclick="func()" id="submit">Generate QR</button>
+        <img src="" alt="" id="img">
+
+    </div>
+    <script>
+        function func(){
+            var x = document.getElementById("input").value;
+            var url = `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${x}`;
+
+            img.src = url;
+        }
+    </script>
+
+    
+</body>
+</html>
